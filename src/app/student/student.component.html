@@ -1,11 +1,14 @@
 <div *ngIf="student">
-    Student: {{student?.name}}
-    <div *ngIf="student.isJedi"> <!--se não for um jedi, div não aparece pela diretiva-->
-        Jedi Temple: {{student?.temple}}
+    Student: <a href ="#" (click)="clicked()">{{student?.name}}</a>
+    <div *ngIf="student.isJedi">
+        <!--se não for um jedi, div não aparece pela diretiva-->
+        Jedi Temple: {{student?.temple}} <button (click)="description.focus()">Focus!</button>
+        <br>
+        <textarea #description></textarea>
     </div>
 </div>
 <div>
     <p *ngIf="!student">
-    Sem dados para exibir!
-</p>
+        Sem dados para exibir!
+    </p>
 </div>
