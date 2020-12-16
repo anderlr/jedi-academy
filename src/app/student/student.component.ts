@@ -11,7 +11,8 @@ export class StudentComponent implements OnInit {
 
   @Input() student!: Student
   
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
   }

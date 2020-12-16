@@ -1,0 +1,10 @@
+<div>
+    <p>Insert a new student here:</p>
+    <p>Name:</p>
+    <input type="text" #nameInput>
+    <button type="text" (click)="sendName(nameInput.value)">Send</button>
+    <br>
+    <p>Is the student a jedi?<input type="checkbox" #jediInput [(ngModel)]="isChecked" (change)="sendJedi()">
+    </p>
+
+</div>
