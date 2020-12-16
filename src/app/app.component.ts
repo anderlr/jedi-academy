@@ -33,6 +33,16 @@ export class AppComponent {
     this.students.push(new_student)
 
   }
+
+  deleteStudent(target:string){
+    this.students.forEach(function (item, indice,array) {
+     if(array[indice].name==target){
+      //  alert("vrau")
+      array.splice(indice, 1)
+     }
+    });
+    // var pos = this.students.indexOf(target);
+  }
   }
  
   
