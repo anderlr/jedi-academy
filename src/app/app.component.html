@@ -1,5 +1,7 @@
 <jad-header></jad-header>
+<jad-insert (newStudentEvent)="addStudent($event)" (newStudentJedi)="changeJedi($event)"></jad-insert>
+<hr>
 <jad-student *ngFor="let student of students"[student]="student" (deleteStudentEvent)="deleteStudent($event)"></jad-student>
 <!-- <jad-student></jad-student> -->
-<jad-insert (newStudentEvent)="addStudent($event)" (newStudentJedi)="changeJedi($event)"></jad-insert>
+
 

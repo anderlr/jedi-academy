@@ -16,7 +16,12 @@ export class InsertComponent implements OnInit {
   }
   isChecked:boolean =false
   sendName(item: string) {
-    this.newStudentEvent.emit(item);
+    if(item!=''){
+      this.newStudentEvent.emit(item);
+    }
+    else{
+      alert("A name, your student needs!")
+    }
     //console.log(item)
   }
 

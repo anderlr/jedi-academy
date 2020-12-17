@@ -2,7 +2,10 @@
 .student{
     /* background-color:red;  */
     width:80%;
-    margin-left:10%;
+    margin-left:11%;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    color: rgb(255,213,9);
 }
 
 p{
@@ -10,11 +13,9 @@ p{
  display:inline-block;
  margin-left: 10%;
  width:33%;
- color:white;
 }
 .jediSecret{
     display:inline-block;
-    color:white;
     /* background-color:black; */
     width:25%;
 }

@@ -25,27 +25,38 @@ export class AppComponent {
   addStudent(name: string) {
 
     let new_student: Student = {
-        name: '', isJedi: false
-      }
-    new_student.name = name
-    new_student.isJedi = this.change_jedi
-    if(this.change_jedi==true)new_student.temple = 'Coruscant'
-    this.students.push(new_student)
+      name: '', isJedi: false
+    }
+    let name_repeat: boolean = false
 
+    this.students.forEach(function (item, indice, array) {
+      if (array[indice].name == name) {
+        name_repeat = true
+        alert("This student already exists.Again, you must try")
+      }
+    }
+    );
+    if(name_repeat==false)
+    {
+      new_student.name = name
+      new_student.isJedi = this.change_jedi
+      if(this.change_jedi== true) new_student.temple = 'Coruscant'
+      this.students.push(new_student)
+    }
   }
 
-  deleteStudent(target:string){
-    this.students.forEach(function (item, indice,array) {
-     if(array[indice].name==target){
+deleteStudent(target: string){
+  this.students.forEach(function (item, indice, array) {
+    if (array[indice].name == target) {
       //  alert("vrau")
       array.splice(indice, 1)
-     }
-    });
-    // var pos = this.students.indexOf(target);
+    }
+  });
+  // var pos = this.students.indexOf(target);
+}
   }
-  }
- 
-  
+
+
 
 
   //students.push(new_student)

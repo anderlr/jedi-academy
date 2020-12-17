@@ -1,10 +1,27 @@
 .insert{
-    color:white;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    color: rgb(255,213,9);
     margin-bottom: 10px;
     /* background-color:green; */
     width:24%;
-    margin-left:36%;
+    margin-left:37%;
     margin-right:0%;
     text-align: center;
+    
 }
-
+button{
+    display:inline-block;
+    font-size: 20px;
+    background-color:green;
+    padding:none;
+    width:25%;
+    padding:none;
+    margin:none;
+    padding-bottom:2px;
+    margin-left:2%;
+}
+.nameBox{
+    height:24px;
+    display:inline-block;
+}

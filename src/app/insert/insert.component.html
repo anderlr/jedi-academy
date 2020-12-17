@@ -1,9 +1,11 @@
 <div class="insert">
-    <p>Insert a new student here:</p>
-    <p>Name:</p>
-    <input type="text" #nameInput>
+    <h2>Insert a new student here:</h2>
+    <p>Name:<input class="nameBox" type="text" #nameInput></p>
+    
     <button type="text" (click)="sendName(nameInput.value)" (click)="nameInput.value='' ">Send</button>
     <br>
-    <p>Is the student a jedi?<input type="checkbox" #jediInput [(ngModel)]="isChecked" (change)="sendJedi()">
+    <p classs="isJedi">Is the student a jedi?
+        <input class="check" type="checkbox" #jediInput [(ngModel)]="isChecked" (change)="sendJedi()">
     </p>
+
 </div>
