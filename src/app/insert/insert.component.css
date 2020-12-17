@@ -1,4 +1,10 @@
-div{
-    color:yellow;
+.insert{
+    color:white;
     margin-bottom: 10px;
+    /* background-color:green; */
+    width:24%;
+    margin-left:36%;
+    margin-right:0%;
+    text-align: center;
 }
+

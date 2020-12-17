@@ -1,8 +1,30 @@
-div{
-    color:yellow;
-    margin-bottom: 10px;
+
+.student{
+    /* background-color:red;  */
+    width:80%;
+    margin-left:10%;
 }
 
+p{
+ text-align: left;
+ display:inline-block;
+ margin-left: 10%;
+ width:33%;
+ color:white;
+}
+.jediSecret{
+    display:inline-block;
+    color:white;
+    /* background-color:black; */
+    width:25%;
+}
+.deleteButton{
+    display:inline-block;
+    font-size: 20px;
+    background-color:green;
+    padding:none;
+    width:10%;
+}
 a{
     color:yellow;
 }
