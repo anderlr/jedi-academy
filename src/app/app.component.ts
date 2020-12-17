@@ -8,9 +8,9 @@ import { Student } from './student/student.model'
 })
 export class AppComponent {
   students: Student[] = [
-    { name: 'Luke', isJedi: true, temple: 'Coruscant' },
-    { name: 'Obi-Wan', isJedi: true, temple: 'Coruscant' },
-    { name: 'Han Solo', isJedi: false },
+    { name: 'Luke', isJedi: true, temple: 'Coruscant' , skill: 50},
+    { name: 'Obi-Wan', isJedi: true, temple: 'Coruscant', skill: 60 },
+    { name: 'Han Solo', isJedi: false , skill: 50},
   ]
 
 
@@ -25,7 +25,7 @@ export class AppComponent {
   addStudent(name: string) {
 
     let new_student: Student = {
-      name: '', isJedi: false
+      name: '', isJedi: false, skill: 10
     }
     let name_repeat: boolean = false
 

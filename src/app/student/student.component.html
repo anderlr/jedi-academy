@@ -1,6 +1,8 @@
 <div class="student" *ngIf="student">
     <p>Student: <a href="#" (click)="clicked()">{{student?.name}}</a></p>
-    <button class="deleteButton" (click)="deleteName()">Delete </button>
+    <p>Skill: {{student.skill}}</p>
+    <button >Train</button>
+    <button (click)="deleteName()">Delete </button>
     <p *ngIf="student.isJedi" class="jediSecret">Jedi Temple: {{student?.temple}}</p>
     <!--se não for um jedi, div não aparece pela diretiva-->
     <div>

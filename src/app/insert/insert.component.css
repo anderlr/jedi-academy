@@ -4,10 +4,13 @@
     color: rgb(255,213,9);
     margin-bottom: 10px;
     /* background-color:green; */
-    width:24%;
-    margin-left:37%;
+    width:100%;
+    height:auto;
+    margin-left:0%;
     margin-right:0%;
     text-align: center;
+    /* background-color: yellow; */
+    display:inline-block;
     
 }
 button{
@@ -15,7 +18,7 @@ button{
     font-size: 20px;
     background-color:green;
     padding:none;
-    width:25%;
+    width:5%;
     padding:none;
     margin:none;
     padding-bottom:2px;
@@ -24,4 +27,20 @@ button{
 .nameBox{
     height:24px;
     display:inline-block;
+}
+img{
+    margin-top:1%;
+
+}
+.padawan{
+    transform: rotateY(180deg);
+    height: 200px;
+    float:right;
+    margin-right:1%;
+}
+
+.troopers{
+    height: 200px;
+    float:left;
+    margin-left:1%;
 }
