@@ -30,3 +30,22 @@ Button{
 a{
     color:yellow;
 }
+
+@media (max-width: 1200px)
+{
+    Button {
+        font-size:16px;
+    }
+}
+
+@media (max-width: 800px)
+{
+    Button{
+        font-size:12px;
+        width:10%;
+    }
+}
+
+.easterEgg{
+    background-color:red;
+}

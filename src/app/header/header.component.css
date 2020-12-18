@@ -5,13 +5,6 @@ h1{
     font-weight: 900;
 }
 
-.padawan{
-    transform: rotateY(180deg);
-    height: 200px;
-    float:right;
-}
-
-.troopers{
-    height: 200px;
-
+audio{
+    color: red;
 }

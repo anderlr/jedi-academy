@@ -44,3 +44,58 @@ img{
     float:left;
     margin-left:1%;
 }
+
+
+@media (max-width: 1200px)
+{
+    button{
+        font-size: 16px;
+        width: 10%;
+    }
+
+    img{
+        margin-top:4%;
+    
+    }
+
+    .padawan{
+        transform: rotateY(180deg);
+        height: 100px;
+        float:right;
+        margin-right:1%;
+    }
+    
+    .troopers{
+        height: 100px;
+        float:left;
+        margin-left:1%;
+    }
+    
+}
+
+@media (max-width: 800px)
+{
+    button{
+        font-size: 14px;
+        width: 10%;
+    }
+
+    img{
+        margin-top:4%;
+    
+    }
+
+    .padawan{
+        transform: rotateY(180deg);
+        height: 100px;
+        float:right;
+        margin-right:1%;
+    }
+    
+    .troopers{
+        height: 100px;
+        float:left;
+        margin-left:1%;
+    }
+    
+}

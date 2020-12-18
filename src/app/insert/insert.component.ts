@@ -15,6 +15,7 @@ export class InsertComponent implements OnInit {
   ngOnInit(): void {
   }
   isChecked:boolean =false
+  
   sendName(item: string) {
     if(item!=''){
       this.newStudentEvent.emit(item);
