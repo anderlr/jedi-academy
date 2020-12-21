@@ -24,9 +24,6 @@ export class AppComponent {
 
   addStudent(name: string) {
 
-    let new_student: Student = {
-      name: '', isJedi: false, skill: 10
-    }
     let name_repeat: boolean = false
 
     this.students.forEach(function (item, indice, array) {
@@ -38,6 +35,9 @@ export class AppComponent {
     );
     if(name_repeat==false)
     {
+      let new_student: Student = {
+        name: '', isJedi: false, skill: 10
+      }
       new_student.name = name
       new_student.isJedi = this.change_jedi
       if(this.change_jedi== true) new_student.temple = 'Coruscant'
